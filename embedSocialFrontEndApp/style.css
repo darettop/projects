@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.profile-image {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+}
+
+.profile-image .name-date {
+    padding: 5%;
+}
+
+.card {
+    margin: 1%;
+    width: 23%;
+    height: 550px;
+    display: flex;
+    border-radius: 3px;
+    flex-direction: column;
+    font-size: 10px;
+    background-color: #f8f8f8;
+}
+
+.card hr {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.info {
+    height: 10%;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+}
+
+.info div {
+    width: 50%;
+}
+
+.caption::-webkit-scrollbar {
+    display: none;
+}
+
+.caption {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image {
+    padding: 10px 10px 10px 10px;
+    height: 60%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.image img {
+    width: 99%;
+    height: 99%;
+    border-radius: 1%;
+}
+
+.caption {
+    height: 20%;
+    overflow: scroll;
+    padding: 5%;
+}
+
+.likes {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+}
+
+.likes img {
+    padding-right: 3%;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+    .cards-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card {
+        width: 48%;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    .cards-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+    }
+  }
+
+ 
